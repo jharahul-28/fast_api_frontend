@@ -8,7 +8,6 @@ function App() {
   const submit =async (e) =>{
     e.preventDefault();
 
-    //tutorial-start
     // const form = new FormData (e.target);
     // const data = Object.fromEntries(form.entries());
     // const response = await fetch ('https://localhost:8000/event', {
@@ -21,9 +20,7 @@ function App() {
     // });
     // const {id}= await response.json();
     // setId(id)
-    //tutorial-end
-
-    //MP-start
+    
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
@@ -50,7 +47,6 @@ function App() {
       setId("01HR7VHWJ0DMQ2R4F5PH10X5D8")
     })
     .catch((error) => console.error(error));
-  //MP-end
   }
 
 
